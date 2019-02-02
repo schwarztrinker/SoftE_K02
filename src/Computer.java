@@ -1,7 +1,7 @@
 public class Computer{
-    public static void main(String[] args) {
-        IUSBComputerInterface dvdBurner = new USB3Adapter();
+    USBPort usbPort = new USBPort();
 
-        dvdBurner.plugInUSB2();
+    public USBPort getUsbPort() {
+        return usbPort;
     }
 }
